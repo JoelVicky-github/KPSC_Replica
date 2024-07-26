@@ -1,0 +1,286 @@
+/* CSS STYLING */
+ 
+body{
+    background:  #cccccc;
+}
+
+.Notifcation {
+    background-color: aliceblue;
+    width:100%; /* Set the width to 100% of the viewport width */
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto; /* Add vertical scroll if content exceeds height */
+}
+
+.text1 {
+    width:100%; /* Set the width to 100% of the viewport width */
+    color: red;
+    margin-top: 0%;
+    font-size: large;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    animation: marquee 40s linear infinite; /* Apply the marquee animation */
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.ContainerMenu2{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.ContainerMenu2 a{
+    color :aliceblue;
+}
+
+.MenuItems{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    color:aliceblue;
+    background-color: #6183a6; 
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: medium;
+    margin: 0%;
+    color:aliceblue;
+    background-color: #6183a6; 
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.Right {
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Add overflow hidden to hide content outside the container */
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    padding: 3px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: scroll 10s linear infinite;
+    position: relative; /* Add relative positioning to allow animation to work */
+    transform: translateY(100%); /* Start from the bottom */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+.GridContainer{ 
+    display: grid;
+    width: 900px;
+    grid-template-columns: 300px 350px 300px;
+    grid-template-rows: 2fr ;
+    margin-top: 10px;
+}
+
+/* Center contents*/
+
+.ContainerCenter{
+    margin: 20px;
+    margin-left: 105px;
+    padding-left: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 2/6 ;
+    width: 800px;
+}
+
+.Center{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to top, #528ecc,#469aef );
+    border: 1px solid #337bc4;
+    flex-basis: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 0px 1px 0px #528ecc;
+}
+
+
+/*---------------- Left and bottom -------------------------- */
+
+.ContainerFlexBox{
+    display :flex;
+    flex-direction: column;
+    grid-area: 1/7/2/7;
+}
+
+.Left1{
+    height: 250px;
+    width: 300px;
+    background: linear-gradient(to bottom, aliceblue,#336699 );
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.Left2{
+    height: 250px;
+    width: 300px;
+    background: linear-gradient(to bottom, #336699,#79bbff );
+    border-radius: 10px;
+}
+
+.list{
+    padding: 0%;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.items{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    text-decoration: solid grey;
+    padding-left: 10px;
+}
+
+
+.BottomContainer {
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    margin-top: 10px;
+    align-items: flex-end;
+    height: 40vh;
+    width: 100%;
+}
+
+.Bottom {   
+    height: 300px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.ContainerBottom{
+    width: 100%;
+    margin-left: 50px;
+    padding-top: 20px;
+    display :flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    display :flex;
+    margin: 0%;
+    padding: 15px;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #528ecc,#469aef );
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.digilogo{
+    height: 20px;
+    width: 100px;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background: rgb(49, 46, 46);
+}
+
+.ContainerFooter{
+    margin-left: 100px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    height: 40px;
+    justify-content: center;
+}
+
+.Footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.GridContainerBottom{
+    margin-left: 300px;
+    margin-top: 10px;
+    display :grid;
+    grid-template-columns: 325px 500px 130px;
+    grid-template-rows: 70px ;
+}
+
+.One{
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.Two{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 50px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Three{
+    padding-top: 10px;
+}
+
+.GridText{
+    margin-bottom: 10px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
